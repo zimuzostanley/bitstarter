@@ -1,4 +1,6 @@
-1;3201;0c1;3201;0cvar express = require('express');
+1;3201;0c1;3201;0c
+var express = require('express');
+var fs = require('fs');
 
 var app = express.createServer(express.logger());
 
