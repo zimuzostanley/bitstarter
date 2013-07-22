@@ -1,380 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Blurbcircle</title>
-    
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta charset="utf-8">
-    
-    <title>My First Bitstarter</title>
-    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-2.3.2.css">
-    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-responsive.css">
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
-    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
-    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Joti+One' rel='stylesheet' type='text/css'>
-     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
-    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
-    
-    <style>
+<html>
 
-      @media (min-width: 1200px){
-        
-      }
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Blurbcircle</title>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css">
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+		<link rel="stylesheet" href="index.css">
+		<link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+    	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
+          rel="stylesheet" type="text/css">
+    	<script src="jquery-1.7.2.min.js"></script>
+    	<script src="bootstrap/js/bootstrap.js"></script>
+	</head>
 
-      @media (min-width 768px) and (max-width: 979px){
-        
-      }
+	<body>
+		<div class="navbar navbar-fixed-top navbar-inverse">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            			<span class="icon-bar"></span>
+            			<span class="icon-bar"></span>
+            			<span class="icon-bar"></span>
+          			</a> <!-- icon that appears in mobile mode for navbar -->
+          			<a class="brand logo" href="#">Blurbcircle</a><!-- Logo -->
+          			<div class="nav-collapse">
+          				<ul class="nav">
+          					<li class="active"><a href="#"><i class="icon-home"></i>Home</a></li>
+          					<li><a href="#" class="loginForm"><i class="icon-facebook"></i> Login</a></li>
+          					<li><a href="#"><i class="icon-plus"></i> Buy</a></li>
+          					<li><a href="#"><i class="icon-minus"></i> Sell</a></li>
+          					<li class="visible-phone visible-tablet"><a href="#"><i class="icon-compass icon-large "></i> Category</a></li>
+          					<li class="visible-phone visible-tablet"><a href="#"><i class="icon-th-large "></i> Location</a></li>
+          					
+          					<li class="visible-phone visible-tablet"><form class="navbar-search" >
+                    				<input type="text" class="search-query" placeholder="Search">
+                 				 </form><!-- navbar-search -->
+              				</li><!-- li -->
+          				</ul><!-- nav -->
+          				<form class="navbar-search pull-right visible-desktop search-bar">
+                    		<input type="text" class="search-query span2" placeholder="Search">
+                 		</form><!-- navbar-search -->
+          			</div><!-- nav-collapse -->
+				</div><!-- container -->
+			</div><!-- navbar-inner -->
+		</div><!-- navbar navbar-fixed-top -->
 
-      @media (max-width: 767px){
-        
-      }
+		<div class="container content">
+			<div class="row-fluid heading top-panel jumbotron">
+				<div class="span9 offset1">
+					<h1>Post a blurb and notify the world!</h2>
+				</div>
+			</div>
 
-      @media (max-width: 480px){
-        
+			<div class="row-fluid">
+				<div class="span9 offset1 dividing-line">
+					
+				</div>
+			</div>
 
-      }
+			<div class="row">
+				<div class="span9 offset1">
+					<ul class="thumbnails">
+            			<li class="span3">
+              				<div class="thumbnail thumbnail-mod">
+                				<img src="http://placehold.it/480x200" class="visible-phone" alt="">
+                				<img src="http://placehold.it/150x200" class="visible-tablet" alt="">
+                				<img src="http://placehold.it/250x200" class="visible-desktop" alt="">
+                				<div class="thumbnail-description">
+                  					<h4>Bold 5 &nbsp<i class="icon-caret-right"></i>&nbsp &#8358;3, 000</h4>
+                  					<strong style="font-style: italic;"><a href="#" class="usernameName muted">zimuzostanley <br> <span class="muted">23-12-2013</span></a></strong>
+                  					<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit
+                 					</p>   
+                  					<div>
+                    					<a href="#" style="text-decoration: none;"><i class="icon-comment icon-large"></i> 13</a> 
+                  					</div><!-- div -->
+                				</div><!-- thumbnail-description -->
+              				</div><!-- thumbnail thumnail-mod -->
+            			</li><!-- li -->
+          			</ul>
+				</div>
+			</div>
 
-      body {
-        background-color: #F9F9F9;
-        background: linear-gradient(to bottom right, #FFFFFF, #F9F9F9);
-        background: -webkit-linear-gradient(bottom right, #FFFFFF, #F9F9F9);
-      }
+			<div class="sideBar span2 visible-desktop">
+				<div class="row">
+					<div class="span2">
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#"><i class="icon-th-large icon-2x"></i></a></li>
+							<li><a href="#"><i class="icon-compass icon-2x"></i></a></li>
+						</ul>
+					</div>
+				</div>
 
-      .brand{
-        font-family: 'Joti One', cursive;
-      }
+				<div class="row">
+					<div class="span2">
+						<ul class="nav nav-tabss nav-stacked">
+							<li class="active"><a href="#">Phones</a></li>
+							<li><a href="#">Books</a></li>
+							<li><a href="#">Pink</a></li>
+						</ul>
+					</div>
+				</div>
+				
 
-      .content{
-        padding-top: 40px;
-        margin-top: 20px;
-        margin-left: 4%;
-        background-color: #FFFFFF;
-        background: linear-gradient(to bottom right, #FFFFFF, #FAFAFA);
-        background: -webkit-linear-gradient(bottom right, #FFFFFF, #FAFAFA);
-        
-      }
-
-      .thumbnail .thumbnail-description .usernameName:hover{
-        color: #0088CC;
-      }
-
-      .usernameName{
-        text-decoration: none;
-      }
-
-
-      .thumbnail{
-        padding: 2.5% 2.5%;
-        position: relative;
-        margin: 0px 1%;
-      }
-
-      .thumbnail:hover{
-        border: 1.5px solid #eee;
-      }
-
-      .btn-market{
-        margin-left: 6%;
-      }
-
-      .thumbnail-description{
-        padding: 2.5%;
-      }
-
-      .thumbnail p{
-        border-bottom: 1px solid #F4F4F4;
-        border-top: 1px solid #F4F4F4; 
-        padding: 5% 0px;
-        padding-bottom: 13%; 
-        text-align: left;
-      }
-
-    </style>
-
-    <script type="text/javascript">
-      
-
-      $(function(){
-        
-
-        var emailForm = '<form>\
-                          <div class="input-prepend">\
-                            <span class="add-on"><i class="icon-envelope"></i></span>\
-                            <input class="span2" type="text" placeholder="Email address">\
-                          </div>\
-                          <div class="input-prepend">\
-                            <span class="add-on"><i class="icon-key"></i></span>\
-                            <input class="span2" type="password" placeholder="Password">\
-                          </div>\
-                          <a href="#" class="btn btn-facebook btn-small"><i class="icon-facebook"></i> | Login<a>\
-                        </form>';
-
-        var categoryContent = '<ul class="nav nav-pills">\
-                                <li class="active"><a href="#">Laptops</a></li>\
-                                <li><a href="#">Phones</a></li>\
-                                <li><a href="#">Electronics</a></li>\
-                                <li><a href="#">Books</a></li>\
-                                <li><a href="#">Chairs</a></li>\
-                                <li><a href="#">Hair cut</a></li>\
-                                <li><a href="#">Shirts</a></li>\
-                              </ul>';
-
-        var locationContent = '<ul class="nav nav-pills">\
-                                <li class="active"><a href="#">CU</a></li>\
-                                <li><a href="#">Delsu</a></li>\
-                                <li><a href="#">UNIlag</a></li>\
-                                <li><a href="#">ABU</a></li>\
-                                <li><a href="#">UniEkiti</a></li>\
-                                <li><a href="#">UNIBen</a></li>\
-                                <li><a href="#">UNN</a></li>\
-                              </ul>';
-
-        var itemForm = '<form>\
-                          <div class="span3" style="padding-bottom: 2.5%;">\
-                            <input class="input-medium" type="text" placeholder="Item name" style="margin-bottom: 5%;">\
-                            <label class="muted">Price in naira</label>\
-                            <input class="input-mini" type="text" placeholder="Start">\
-                            <span>to</span>\
-                            <input class="input-mini" type="text" placeholder="Final">\
-                            <div class="btn-group">\
-                              <a href="#" class="btn">Category</a>\
-                              <a href="#" class="btn">Location</a>\
-                            </div>\
-                            <div style="padding: 2.5%;"></div>\
-                            <a href="#" class="btn btn-facebook btn-small"><i class="icon-facebook"></i> | Post<a>\
-                          </div>\
-                        </form>';
-
-        var formTitle = '<span><i class="icon-facebook"></i></span>';
-
-        $('.loginForm').popover({title: formTitle, content: emailForm, placement: 'bottom', html: 'true'});
-        $('.categoryPop').popover({title: 'Categories', content: categoryContent, placement: 'bottom', html: 'true'});
-        $('.locationPop').popover({title: 'Location', content: locationContent, placement: 'bottom', html: 'true'});
-        $('.btn-buy').popover({title: '<strong>Buy an Item</strong>', content: itemForm, placement: 'bottom', html: 'true'});
-        $('.btn-sell').popover({title: '<strong>Sell an Item</strong>', content: itemForm, placement: 'bottom', html: 'true'});
-        
-        
-      });
-    </script>
-
-  </head>
-
-  <body>
-    <div class="navbar navbar-fixed-top navbar-inverse">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a> <!-- icon that appears in mobile mode for navbar -->
-
-          <a class="brand logo" href="#">Blurbcircle</a><!-- Logo -->
-
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li class="active"><a href="#"><i class="icon-home"></i>Home</a></li>
-              
-              <li class="visible-desktop"><a href="#" class="categoryPop" rel="popover" ><i class="icon-th-large"></i> | Categories</a></li>
-              <li class="visible-phone visible-tablet"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-th-large"></i> | Categories</a>
-                <ul class="dropdown-menu">
-                  <li class="active"><a href="#">Laptops</a></li>
-                  <li><a href="#">Phones</a></li>
-                  <li><a href="#">Electronics</a></li>
-                  <li><a href="#">Books</a></li>
-                  <li><a href="#">Chairs</a></li>
-                  <li><a href="#">Hair cut</a></li>
-                  <li><a href="#">Shirts</a></li>
-                </ul><!-- dropdown-menu -->
-              </li><!-- visible-phone visible-tablet -->
-
-              <li class="visible-desktop"><a href="#" class="locationPop" rel="popover" ><i class="icon-globe"></i> | Location</a></li>
-              <li class="visible-phone visible-tablet"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-globe"></i> | Location</a>
-                <ul class="dropdown-menu">
-                  <li class="active"><a href="#">Delsu</a></li>
-                  <li><a href="#">Unn</a></li>
-                  <li><a href="#">Unilag</a></li>
-                  <li><a href="#">Uniben</a></li>
-                  <li><a href="#">Uniuyo</a></li>
-                  <li><a href="#">CU</a></li>
-                  <li><a href="#">KNUST</a></li>
-                </ul><!-- dropdown-menu -->
-              </li><!-- visible-phone visible-tablet -->
-
-              <li><a href="#" class="loginForm visible-desktop"><i class="icon-facebook"></i> | Login</a></li>
-
-              <li><form class="navbar-search">
-                    <input type="text" class="search-query" placeholder="Search">
-                  </form><!-- navbar-search -->
-              </li><!-- li -->
-
-              <li><div class="btn-group btn-market visible-desktop">
-                    <a class="btn btn-warning btn-sell" href="#"><i class="icon-plus"></i> | Sell</a>
-                    <a class="btn btn-success btn-buy" href="#"><i class="icon-plus"></i> | Buy</a>
-                  </div><!-- btn-group btn-market visible-desktop -->
-              </li><!-- li -->
-
-            </ul><!-- nav -->
-          </div><!-- nav-collapse -->    
-
-        </div> <!-- container -->
-      </div><!-- navbar-inner -->
-    </div><!-- navbar -->
-
-    <div class="container content">
-      <div class="row visible-tablet visible-phone">
-        <div class="span3 offset3">
-          <div class="accordion" id="accordion2">
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne"><i class="icon-facebook"></i> | Login</a>
-              </div><!-- accordion-heading -->
-
-              <div id="collapseOne" class="accordion-body collapse in">
-                <div class="accordion-inner">
-                  <form>
-                    <div class="input-prepend">
-                      <span class="add-on"><i class="icon-envelope"></i></span>
-                      <input class="span9" type="text" placeholder="Email address">
-                    </div><!-- input-prepend -->
-                    <div class="input-prepend">
-                      <span class="add-on"><i class="icon-key"></i></span>
-                      <input type="password" placeholder="Password">
-                    </div><!-- input-prepend -->
-                    <a href="#" class="btn btn-facebook span7"><i class="icon-facebook"></i> | Login<a>
-                  </form><!-- form -->
-                </div><!-- accordion-inner -->
-              </div><!-- accordion-body collapse in -->
-
-            </div><!-- accordion-group -->
-
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">Buy</a>
-              </div><!-- accordion-heading -->
-
-              <div id="collapseTwo" class="accordion-body collapse in">
-                <div class="accordion-inner">
-                  <form class="form-horizontal">
-                    <div class="control-group">
-                      <div class="controls controls-row">
-                        <input class="span9" type="text" placeholder="Item name" style="margin-bottom: 5%;">
-                      </div><!-- controls controls-row -->
-
-                      <div class="controls controls-row">
-                        <label class="muted span9">Price in naira</label>
-                      </div><!-- controls controls-row -->
-
-                      <div class="controls controls-row">
-                        <input class="span4" type="text" placeholder="Start">
-                        <span class="span1">to</span>
-                        <input class="span4" type="text" placeholder="Final">
-                      </div><!--controls controls-row -->
-
-                      <div class="controls controls-row">
-                        <div style="padding: 2.5%;"></div>
-                          <div class="btn-group span9">
-                            <a href="#" class="btn">Category</a>
-                            <a href="#" class="btn">Location</a>
-                          </div><!-- btn-group span9 -->
-                        </div><!-- div -->
-                      </div><!-- controls controls-row -->
-
-                      <div class="controls controls-row">
-                        <div style="padding: 2.5%;"></div>
-                        <a href="#" class="btn btn-facebook span9"><i class="icon-facebook"></i> | Post<a>
-                      </div><!-- controls controls-row -->
-                    </div> <!-- control-group -->
-                  </form> <!-- form -->
-                </div><!-- accordion-inner -->
-              </div><!-- accordion-body collapse in -->
-            </div><!-- accordion-group -->
-
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">Sell</a>
-              </div><!-- accordion-heading -->
-
-              <div id="collapseThree" class="accordion-body collapse in">
-                <div class="accordion-inner">
-                  <form class="form-horizontal">
-                    <div class="control-group">
-                      <div class="controls controls-row">
-                        <input class="span9" type="text" placeholder="Item name" style="margin-bottom: 5%;">
-                      </div><!-- controls controls-row -->
-
-                      <div class="controls controls-row">
-                        <label class="muted span9">Price in naira</label>
-                      </div><!-- controls controls-row -->
-
-                      <div class="controls controls-row">
-                        <input class="span4" type="text" placeholder="Start">
-                        <span class="span1">to</span>
-                        <input class="span4" type="text" placeholder="Final">
-                      </div><!--controls controls-row -->
-
-                      <div class="controls controls-row">
-                        <div style="padding: 2.5%;"></div>
-                          <div class="btn-group span9">
-                            <a href="#" class="btn">Category</a>
-                            <a href="#" class="btn">Location</a>
-                          </div><!-- btn-group span9 -->
-                        </div><!-- div -->
-                      </div><!-- controls controls-row -->
-
-                      <div class="controls controls-row">
-                        <div style="padding: 2.5%;"></div>
-                        <a href="#" class="btn btn-facebook span9"><i class="icon-facebook"></i> | Post<a>
-                      </div><!-- controls controls-row -->
-                    </div> <!-- control-group -->
-                  </form> <!-- form -->
-                </div><!-- accordion-inner -->
-              </div><!-- accordion-body collapse in -->
-            </div><!-- accordion-group -->
-         
-          </div><!-- accordion -->
-        </div><!-- span3 offset3 -->
-      </div><!-- row visible-tablet visible-phone -->
-
-      <div class="row">
-        <div class="span9 offset1">
-          <ul class="breadcrumb">
-            <li><a href="#">Home</a><span class="divider">/</span></li>
-            <li><a href="#">Nigeria</a><span class="divider">/</span></li>
-            <li><a href="#">Buys</a></li>
-          </ul>
-        </div><!-- span9 offset1 -->
-      </div><!-- row -->
-
-      <div class="row">
-        <div class="span10 offset1">
-          <ul class="thumbnails">
-            <li class="span3 span3new">
-              <div class="thumbnail thumbnail-mod">
-                <img src="http://placehold.it/480x200" class="visible-phone" alt="">
-                <img src="http://placehold.it/150x200" class="visible-tablet" alt="">
-                <img src="http://placehold.it/250x200" class="visible-desktop" alt="">
-                <div class="thumbnail-description">
-                  <h4>Bold 5 <i class="icon-caret-right"></i>&#8358;3, 000</h4>
-                  <strong style="font-style: italic;"><a href="#" class="usernameName muted">zimuzostanley</a></strong>
-                  <p>
-                    Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit <br> <span class="label label-warning date-info pull-right">23-12-2013</span>
-                  </p>   
-                  <div>
-                    <a href="#" style="text-decoration: none;"><i class="icon-comment icon-large"></i> 13</a> 
-                  </div><!-- div -->
-                </div><!-- thumbnail-description -->
-              </div><!-- thumbnail thumnail-mod -->
-            </li><!-- li -->
-          </ul>
-        </div>
-      </div>
-    </div><!-- container -->
-  
-  </body>
+				
+			</div>
+		</div>
+	</body>
 
 </html>
