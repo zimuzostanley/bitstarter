@@ -1,4 +1,4 @@
-1;3201;0c#!/usr/bin/env node
+#!/usr/bin/env node
 var express = require('express');
 var fs = require('fs');
 var path = require('path');
