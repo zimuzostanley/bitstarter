@@ -1,0 +1,80 @@
+body{
+	
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.content{
+	padding-top: 60px;
+}
+
+.top-panel{
+	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+    text-align: center;
+    
+}
+
+.dividing-line{
+	border-bottom: 2px solid #eee;
+	margin-bottom: 3%;
+}
+
+.brand{
+	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+}
+
+.navbar-search .search-query {
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+}
+
+.sideBar{
+	height: 1000px;
+	position: fixed;
+	top: 40px;
+	right: 0%;
+	padding: 1.5%;
+	border: 2px solid #eee;
+}
+
+.search-bar{
+	position: fixed;
+	top: 1px;
+	right: 2%;
+}
+
+
+.thumbnail .thumbnail-description .usernameName:hover{
+        color: #0088CC;
+      }
+
+      .usernameName{
+        text-decoration: none;
+      }
+
+
+      .thumbnail{
+        padding: 2.5% 2.5%;
+        position: relative;
+        margin: 0px 1%;
+      }
+
+      .thumbnail:hover{
+        border: 1.5px solid #eee;
+      }
+
+      .btn-market{
+        margin-left: 6%;
+      }
+
+      .thumbnail-description{
+        padding: 2.5%;
+      }
+
+      .thumbnail p{
+        border-bottom: 1px solid #F4F4F4;
+        border-top: 1px solid #F4F4F4; 
+        padding: 5% 0px;
+        padding-bottom: 13%; 
+        text-align: left;
+      }
