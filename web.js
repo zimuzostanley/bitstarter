@@ -4,7 +4,7 @@ var fs = require('fs');
 var path = require('path');
 
 var app = express.createServer(express.logger());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(__dirname + '/public'));
 app.get('/', function(request, response) {
   response.send(fs.readFileSync("index.html", "utf-8"));
 });
