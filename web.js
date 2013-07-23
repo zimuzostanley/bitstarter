@@ -1,10 +1,10 @@
-#!/usr/bin/env node
+1;3201;0c#!/usr/bin/env node
 var express = require('express');
 var fs = require('fs');
 var path = require('path');
 
 var app = express.createServer(express.logger());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '/public')));
 app.get('/', function(request, response) {
   response.send(fs.readFileSync("index.html", "utf-8"));
 });
