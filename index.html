@@ -15,6 +15,7 @@
           rel="stylesheet" type="text/css">
 	       <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
 	       <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
+	       <script src= "js/blurbcircle.js"></script>
 	</head>
 
 	<body>
@@ -40,10 +41,14 @@
 
             else if(response.status == 'not_authorized'){
               FB.login();
+	      console.log('not_authorized');
+	      alert('not');
             }
 
             else{
               FB.login();
+console.log('else');
+alert('else');
             }
           });
 
