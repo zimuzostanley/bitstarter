@@ -18,6 +18,55 @@
 	</head>
 
 	<body>
+
+    <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          // init the FB JS SDK
+          FB.init({
+            appId      : '515898268464303',                        // App ID from the app dashboard
+            cookie     : true,
+            status     : true,                                 // Check Facebook Login status
+            xfbml      : true                                  // Look for social plugins on the page
+          });
+
+        // Additional initialization code such as adding Event Listeners goes here
+
+
+          FB.Event.subscribe('auth.authResponseChange', function(response){
+            if(response.status == 'connected'){
+              testAPI();
+            }
+
+            else if(response.status == 'not_authorized'){
+              FB.login();
+            }
+
+            else{
+              FB.login();
+            }
+          });
+
+        };
+
+        (function(d){
+          var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+          if (d.getElementById(id)) {return;}
+          js = d.createElement('script'); js.id = id; js.async = true;
+          js.src = "//connect.facebook.net/en_US/all.js";
+          ref.parentNode.insertBefore(js, ref);
+        }(document));
+
+        function testAPI(){
+          console.log('Welcome! Fetching your information...');
+          FB.api('/me', function(response){
+            console.log('Good to see you, ' + response.name);
+          });
+        };
+      </script>
+
+      <fb:login-button show-faces="true" width="200" max-rows="1"></fb:login-button>
+
 		<div class="navbar navbar-fixed-top navbar-inverse">
 			<div class="navbar-inner">
 				<div class="container">
@@ -30,10 +79,10 @@
           			<div class="nav-collapse">
           				<ul class="nav">
           					<li class="active"><a href="#"><i class="icon-home"></i>Home</a></li>
-          					<li><a href="#" class="loginForm"><i class="icon-facebook"></i> Login</a></li>
-          					<li><a href="#"><i class="icon-plus"></i> Buy</a></li>
-          					<li><a href="#"><i class="icon-minus"></i> Sell</a></li>
-          					<li class="visible-phone visible-tablet"><a href="#"><i class="icon-compass icon-large "></i> Category</a></li>
+          					<li><a href="#" class="loginBtn"><i class="icon-facebook"></i> Login</a></li>
+          					<li><a href="#"><i class="icon-plus"></i> Post buy</a></li>
+          					<li><a href="#"><i class="icon-minus"></i> Post sale</a></li>
+          					<li class="visible-phone visible-tablet"><a href="#"><i class="icon-map-marker icon-large "></i> Category</a></li>
           					<li class="visible-phone visible-tablet"><a href="#"><i class="icon-th-large "></i> Location</a></li>
           					
           					<li class="visible-phone visible-tablet"><form class="navbar-search" >
@@ -50,11 +99,16 @@
 		</div><!-- navbar navbar-fixed-top -->
 
 		<div class="container content">
-			<div class="row-fluid heading top-panel jumbotron">
+			<div class="row-fluid heading top-panel">
 				<div class="span9 offset1">
-					<h1>Post a blurb and notify the world!</h2>
+					
+            <h2>Post a <span>buy</span> and find a <span>seller</span>, post a <span>sale</span> and find a <span>buyer</span>!</h2>
 				</div>
 			</div>
+
+      <div class="row-fluid addBlurb">
+
+      </div>
 
 			<div class="row-fluid">
 				<div class="span9 offset1 dividing-line">
@@ -90,7 +144,7 @@
 					<div class="span2">
 						<ul class="nav nav-tabs">
 							<li class="active"><a href="#"><i class="icon-th-large icon-2x"></i></a></li>
-							<li><a href="#"><i class="icon-compass icon-2x"></i></a></li>
+							<li><a href="#"><i class="icon-map-marker icon-2x"></i></a></li>
 						</ul>
 					</div>
 				</div>
@@ -100,7 +154,7 @@
 						<ul class="nav nav-tabss nav-stacked">
 							<li class="active"><a href="#">Phones</a></li>
 							<li><a href="#">Books</a></li>
-							<li><a href="#">Pink</a></li>
+							<li><a href="#">Electronics</a></li>
 						</ul>
 					</div>
 				</div>
