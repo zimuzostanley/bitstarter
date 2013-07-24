@@ -13,6 +13,15 @@ body{
     
 }
 
+.board-location{
+  display: none;
+}
+
+.board-category{
+  display: none;
+}
+
+
 .dividing-line{
 	border-bottom: 2px solid #eee;
 	margin-bottom: 3%;
@@ -78,3 +87,4 @@ body{
         padding-bottom: 13%; 
         text-align: left;
       }
+
