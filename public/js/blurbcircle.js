@@ -1,6 +1,7 @@
 $(function(){
-	$('.loginBtn').click(function(){
+    $('.loginBtn').click(function(){
 	FB.login();
+	alert('fb login');
     });
 
     $('.categoryBtn').click(function(){
