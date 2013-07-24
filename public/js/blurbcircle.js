@@ -1,7 +1,16 @@
 $(function(){
     $('.loginBtn').click(function(){
-	FB.login();
-	alert('fb login');
+	FB.login(function(response){
+	    if(response.authResponse){
+		FB.api('/me', function(response){
+		 alert(response.name);   
+		});
+	    }
+	    else{
+		console.log("not authorized");
+		}
+	});
+
     });
 
     $('.categoryBtn').click(function(){
