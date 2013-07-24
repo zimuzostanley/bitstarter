@@ -3,7 +3,7 @@ $(function(){
 	FB.login(function(response){
 	    if(response.authResponse){
 		FB.api('/me', function(response){
-		 alert(response.name);   
+		 alert(response.email);   
 		}, {scope: 'email, publish_actions'});
 	    }
 	    else{
