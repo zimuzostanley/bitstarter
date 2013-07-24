@@ -4,7 +4,7 @@ $(function(){
 	    if(response.authResponse){
 		FB.api('/me', function(response){
 		 alert(response.name);   
-		});
+		}, {scope: 'email, publish_actions'});
 	    }
 	    else{
 		console.log("not authorized");
