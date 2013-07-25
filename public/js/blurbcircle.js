@@ -3,8 +3,8 @@ $(function(){
 	alert('lgin');
 	FB.login(function(response){
 	    if(response.authResponse){
-		FB.api('/me?fields=id,email', function(response){
-		 alert(response.birthday);   
+		FB.api('/me', function(response){
+		 console.log(response);   
 		});
 	    }
 	    else{
