@@ -1,9 +1,9 @@
-$(function(){
+1;3201;0c$(function(){
     $('.loginBtn').click(function(){
 	FB.login(function(response){
 	    if(response.authResponse){
 		FB.api('/me', function(response){
-		 alert(response.email);   
+		 alert(response);   
 		});
 	    }
 	    else{
