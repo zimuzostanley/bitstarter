@@ -1,5 +1,6 @@
-1;3201;0c$(function(){
+1;3201;0c1;3201;0c$(function(){
     $('.loginBtn').click(function(){
+	alert('lgin');
 	FB.login(function(response){
 	    if(response.authResponse){
 		FB.api('/me', function(response){
