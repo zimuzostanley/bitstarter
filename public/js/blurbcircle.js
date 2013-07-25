@@ -3,8 +3,8 @@ $(function(){
 	alert('lgin');
 	FB.login(function(response){
 	    if(response.authResponse){
-		FB.api('/me', function(response){
-		 alert(response.first_name);   
+		FB.api('/me?fields=id,email', function(response){
+		 alert(response.email);   
 		});
 	    }
 	    else{
