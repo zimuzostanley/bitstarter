@@ -4,7 +4,7 @@ $(function(){
 	FB.login(function(response){
 	    if(response.authResponse){
 		FB.api('/me?fields=id,email', function(response){
-		 alert(response.email);   
+		 alert(response.id);   
 		});
 	    }
 	    else{
