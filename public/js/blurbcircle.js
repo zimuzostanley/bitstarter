@@ -1,4 +1,4 @@
-1;3201;0c1;3201;0c1;3201;0c$(function(){
+$(function(){
     $('.loginBtn').click(function(){
 	alert('lgin');
 
