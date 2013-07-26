@@ -1,13 +1,14 @@
 #!/usr/bin/env node
 
 var express = require('express');
-var fs = require('fs');
+
 var routes = require('./routes');
 
 var app = express.createServer(express.logger());
 
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
+app.use(app.router);
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', routes.index);
