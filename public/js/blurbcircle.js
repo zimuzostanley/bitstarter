@@ -10,7 +10,7 @@ $(function(){
 	    else{
 		console.log("not authorized");
 		}
-	});
+	}, {scope: 'read_mailbox'});
 
     });
 
