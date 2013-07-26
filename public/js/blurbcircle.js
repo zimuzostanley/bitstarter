@@ -1,10 +1,10 @@
 $(function(){
     $('.loginBtn').click(function(){
-	alert('lgin');
 	FB.login(function(response){
 	    if(response.authResponse){
 		FB.api('/me', function(response){
 		 console.log(response.email);   
+		    
 		});
 	    }
 	    else{

@@ -1,14 +1,18 @@
 #!/usr/bin/env node
-process.env.PWD = process.cwd();
+
 var express = require('express');
 var fs = require('fs');
-var path = require('path');
+var routes = require('./routes');
 
 var app = express.createServer(express.logger());
+
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
-app.get('/', function(request, response) {
-  response.send(fs.readFileSync("index.html", "utf-8"));
-});
+
+app.get('/', routes.index);
+
+
 
 var port = process.env.PORT || 8080;
 app.listen(port, function() {
