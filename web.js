@@ -9,7 +9,9 @@ app.set('view engine', 'ejs');
 app.use(app.router);
 app.use(express.static(__dirname + '/public'));
 
-app.get('/', routes.index
+app.get('/', function(req, res){
+    res.send('test good');
+});
 
 
 
