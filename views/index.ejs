@@ -57,7 +57,7 @@
           			<div class="nav-collapse">
           				<ul class="nav">
           					<li class="active home"><a href="#"><i class="icon-home"></i>Home</a></li>
-                    <% if(!loggedIn) { %>
+                    <% if(loggedIn) { %>
                     <li class="dropdown">
                       <a class="userBtn dropdown-toggle" data-toggle="dropdown" href="#"><%= username %> <i class="icon-chevron-down"></i></a>
 		                  <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dLabel">
