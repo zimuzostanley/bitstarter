@@ -1,6 +1,6 @@
 exports.index = function(req, res){
-	var loggedIn = false || req.param('loggedIn');
-	var username = '' || req.param('username');
+	var loggedIn = req.param('loggedIn');
+	var username = req.param('username');
 	console.log("index");
         res.render('index', {layout: false, 'username': username, 'loggedIn': loggedIn});
 };
