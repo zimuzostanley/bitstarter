@@ -27,23 +27,6 @@ $(function(){
     });
 
 
-    $('.logoutBtn').click(function(){
-	FB.logout(function(response){
-	    console.log('loggin out');
-    	   userObject = {'username': '', 'loggedIn': false};
-	    		$.ajax({
-				url: 'http://www.blurbcircle.com/logout',
-				data: userObject,
-				success: function(data){
-				    
-					$('.container .nav-collapse').html(data);
-				}
-			});
-	
-	});
-   });
-
-
     $('.categoryBtn').click(function(){
     	$('.board-location').hide();
 		$('.board-category').toggle();
@@ -58,4 +41,16 @@ $(function(){
 		$(this).parent().addClass('active');
 	});	
 
+	$('.nav-collapse .nav').on('click', '.logoutBtn', function(){
+		FB.logout(function(response){
+	    console.log('loggin out');
+    	   userObject = {'username': '', 'loggedIn': false};
+	    	$.ajax({
+				url: 'http://www.blurbcircle.com/logout',
+				data: userObject,
+				success: function(data){   
+					$('.container .nav-collapse').html(data);
+				}
+			});
+	});
 });
