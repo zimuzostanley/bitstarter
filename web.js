@@ -10,9 +10,7 @@ app.use(app.router);
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', routes.index);
-app.get('/login', function(req, res){
-    res.send('loginget');
-});
+app.get('/login', routes.login);
 app.get('/logout/:username/:loggedIn', routes.logout);
 app.get('/username', routes.username);
 
