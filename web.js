@@ -11,8 +11,8 @@ app.use(express.static(__dirname + '/public'));
 
 app.get('/', routes.index);
 app.get('/login', routes.login);
-app.get('/logout/:username/:loggedIn', routes.logout);
-app.get('/username', routes.username);
+app.get('/logout', routes.logout);
+
 
 
 
