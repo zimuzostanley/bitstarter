@@ -14,7 +14,7 @@ exports.login = function(req, res){
 };
 
 exports.logout = function(req, res){
-	var loggedIn = req.param('loggedIn');
+	var loggedIn = false;
 	var username = req.param('username');
 	console.log("logout");
         res.render('username', {layout: false, 'username': username, 'loggedIn': loggedIn});
