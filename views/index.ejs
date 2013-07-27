@@ -16,20 +16,6 @@
 	       <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
 	       <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
 	       <script src= "js/blurbcircle.js"></script>
-
-         <!-- <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blurbcircle</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="index.css">
-    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
-      <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
-          rel="stylesheet" type="text/css">
-      <script src="jquery-1.7.2.min.js"></script>
-      <script src="bootstrap/js/bootstrap.js"></script>
-      <script src="blurbcircle.js"></script> -->
 	</head>
 
 	<body>
@@ -71,7 +57,11 @@
           			<div class="nav-collapse">
           				<ul class="nav">
           					<li class="active"><a href="#"><i class="icon-home"></i>Home</a></li>
-          					<li><a href="#" class="loginBtn"><i class="icon-facebook"></i> Login</a></li>
+                    <% if(loggedIn) { %>
+                    <li class="userBtn"><a href="#"><%= username %> &nbsp; <i class="icon-chevron-down"></i></a></li>
+                    <% } else { %>
+                    <li class="loginBtn"><a href="#"><i class="icon-facebook"></i> Login</a></li>
+                    <% } %>
           					<li><a href="#modalBuy" data-toggle="modal"><i class="icon-plus"></i> Post buy</a></li>
           					<li><a href="#modalSell" data-toggle="modal"><i class="icon-minus"></i> Post sale</a></li>
           					<li class="visible-phone visible-tablet"><a href="#"><i class="icon-map-marker icon-large "></i> Category</a></li>

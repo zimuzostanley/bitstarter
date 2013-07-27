@@ -1,10 +1,22 @@
+var loggedIn = false;
+var username = '';
+
 $(function(){
     $('.loginBtn').click(function(){
 	FB.login(function(response){
 	    if(response.authResponse){
 		FB.api('/me', function(response){
-		 console.log(response.email);   
-		    
+			console.log(response.first_name);
+			username = response.first_name;  
+			userObject = {'username': username, 'loggedIn': true};
+			$.ajax({
+				url: 'http://www.blurbcircle.com/login',
+				data: userObject,
+				success: function(data){
+					$('.container .nav-collapse .nav').html(data);
+				}
+			});
+		 	
 		});
 	    }
 	    else{
@@ -13,6 +25,7 @@ $(function(){
 	}, {scope: 'email'});
 
     });
+
 
     $('.categoryBtn').click(function(){
     	$('.board-location').hide();
