@@ -1,5 +1,17 @@
+                  <ul class="nav">
+          					<li class="active"><a href="#"><i class="icon-home"></i>Home</a></li>
                     <% if(loggedIn) { %>
                     <li class="userBtn"><a href="#"><%= username %> &nbsp; <i class="icon-chevron-down"></i></a></li>
                     <% } else { %>
                     <li class="loginBtn"><a href="#"><i class="icon-facebook"></i> Login</a></li>
                     <% } %>
+          					<li><a href="#modalBuy" data-toggle="modal"><i class="icon-plus"></i> Post buy</a></li>
+          					<li><a href="#modalSell" data-toggle="modal"><i class="icon-minus"></i> Post sale</a></li>
+          					<li class="visible-phone visible-tablet"><a href="#"><i class="icon-map-marker icon-large "></i> Category</a></li>
+          					<li class="visible-phone visible-tablet"><a href="#"><i class="icon-th-large "></i> Location</a></li>
+          					
+          					<li class="visible-phone visible-tablet"><form class="navbar-search" >
+                    				<input type="text" class="search-query" placeholder="Search">
+                 				 </form><!-- navbar-search -->
+              				</li><!-- li -->
+          				</ul><!-- nav -->
