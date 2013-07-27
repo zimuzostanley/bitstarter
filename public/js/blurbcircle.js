@@ -13,7 +13,7 @@ $(function(){
 				url: 'http://www.blurbcircle.com/login',
 				data: userObject,
 				success: function(data){
-					$('.container .nav-collapse .nav').html(data);
+					$('.container .nav-collapse').html(data);
 				}
 			});
 		 	
@@ -28,7 +28,6 @@ $(function(){
 
 
     $('.logoutBtn').click(function(){
-	alert('enters frontend');
 	FB.logout(function(response){
 	    console.log('loggin out');
     	   userObject = {'username': '', 'loggedIn': false};
@@ -36,8 +35,8 @@ $(function(){
 				url: 'http://www.blurbcircle.com/logout',
 				data: userObject,
 				success: function(data){
-				    alert('enters backend');
-					$('.container .nav-collapse .nav').html(data);
+				    
+					$('.container .nav-collapse').html(data);
 				}
 			});
 	
