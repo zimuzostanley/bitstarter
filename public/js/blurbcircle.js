@@ -56,6 +56,7 @@ $(function(){
 	});	
 
 	$('.nav-collapse .nav').on('click', '.logoutBtn', function(){
+	    alert('logout entered');
 		FB.logout(function(response){
 	    	console.log('loggin out');
     	   	userObject = {'username': '', 'loggedIn': false};
