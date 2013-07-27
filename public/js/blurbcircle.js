@@ -26,6 +26,10 @@ $(function(){
 
     });
 
+    $('.userBtn').click(function(){
+	alert('zim');
+});
+
     $('.logoutBtn').click(function(){
 	alert('enters frontend');
 	FB.logout(function(response){
