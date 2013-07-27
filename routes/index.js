@@ -6,6 +6,7 @@ exports.index = function(req, res){
 };
 
 exports.login = function(req, res){
+        console.log(req);
 	var loggedIn = false;
 	var username = '';
 	console.log("login");
