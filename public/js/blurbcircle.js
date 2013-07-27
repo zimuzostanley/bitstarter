@@ -13,7 +13,7 @@ $(function(){
 				url: 'http://www.blurbcircle.com/login',
 				data: userObject,
 				success: function(data){
-					$('.home').html(data);
+					$('.home').after(data);
 				}
 			});
 		 	
