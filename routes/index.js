@@ -9,7 +9,7 @@ exports.login = function(req, res){
 	var loggedIn = false;
 	var username = '';
 	console.log("login");
-    res.render('username', {layout: false, 'username': username, 'loggedIn': loggedIn});
+        res.send('loggginnn');
 };
 
 exports.logout = function(req, res){
