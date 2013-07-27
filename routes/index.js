@@ -2,15 +2,15 @@ exports.index = function(req, res){
 	var loggedIn = false;
 	var username = '';
 	console.log("index");
-    res.render('index', {layout: false, 'username': username, 'loggedIn': loggedIn});
+        res.render('index', {layout: false, 'username': username, 'loggedIn': loggedIn});
 };
 
 exports.login = function(req, res){
         console.log(req);
-	var loggedIn = false;
-	var username = '';
+	var loggedIn = req.param('loggedIn');
+	var username = req.param('username');
 	console.log("login");
-        res.send('loggginnn');
+        res.render('index', {layout: false, 'username': username, 'loggedIn': loggedIn});
 };
 
 exports.logout = function(req, res){
