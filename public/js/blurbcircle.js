@@ -55,7 +55,7 @@ $(function(){
 		$(this).parent().addClass('active');
 	});	
 
-	$('.nav-collapse .nav').on('click', '.logoutBtn', function(){
+	$('.nav-collapse').on('click', '.logoutBtn', function(){
 	    alert('logout entered');
 		FB.logout(function(response){
 	    	console.log('loggin out');
