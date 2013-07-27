@@ -57,13 +57,14 @@
           			<div class="nav-collapse">
           				<ul class="nav">
           					<li class="active home"><a href="#"><i class="icon-home"></i>Home</a></li>
-                    <% if(loggedIn) { %>
-                    <li><a class="userBtn dropdown" href="#"><%= username %> &nbsp; <i class="icon-chevron-down"></i></a>
-		       <ul class="dropdown-menu" role="menu" arilabelledby="dLabel">
-			<li><a class="profileBtn" tabindex="-1" href="#">Profile</a></li>
-			<li><a class="logoutBtn" tabindex="-1" href="#">Logout</a></li>
-		       </ul>
-		    </li>
+                    <% if(!loggedIn) { %>
+                    <li class="dropdown">
+                      <a class="userBtn dropdown-toggle" data-toggle="dropdown" href="#"><%= username %> <i class="icon-chevron-down"></i></a>
+		                  <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dLabel">
+			                 <li><a class="profileBtn" href="#">Profile</a></li>
+			                 <li><a class="logoutBtn"  href="#">Logout</a></li>
+		                  </ul>
+		                </li>
                     <% } else { %>
                     <li class="loginBtn"><a href="#"><i class="icon-facebook"></i> Login</a></li>
                     <% } %>
@@ -227,7 +228,11 @@
                 				</div><!-- thumbnail-description -->
               				</div><!-- thumbnail thumnail-mod -->
             			</li><!-- li -->
+
+                  
           			</ul>
+
+
 				</div>
 			</div>
 
