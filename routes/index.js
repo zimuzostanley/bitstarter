@@ -19,5 +19,9 @@ exports.logout = function(req, res){
     res.render('username', {layout: false, 'username': username, 'loggedIn': loggedIn});
 };
 
+exports.username = function(req, res){
+    res.send('userrrname');
+};
+
 
 
