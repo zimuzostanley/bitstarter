@@ -56,7 +56,6 @@ $(function(){
 	});	
 
 	$('.nav-collapse').on('click', '.logoutBtn', function(){
-	    alert('logout entered');
 		FB.logout(function(response){
 	    	console.log('loggin out');
     	   	userObject = {'username': '', 'loggedIn': false};
@@ -64,6 +63,7 @@ $(function(){
 				url: 'http://www.blurbcircle.com/logout',
 				data: userObject,
 				success: function(data){   
+				    alert('logout success');
 					$('.container .nav-collapse').html(data);
 				}
 			});
