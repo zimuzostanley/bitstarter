@@ -58,7 +58,12 @@
           				<ul class="nav">
           					<li class="active home"><a href="#"><i class="icon-home"></i>Home</a></li>
                     <% if(loggedIn) { %>
-                    <li class="userBtn"><a href="#"><%= username %> &nbsp; <i class="icon-chevron-down"></i></a></li>
+                    <li class="userBtn"><a href="#"><%= username %> &nbsp; <i class="icon-chevron-down"></i></a>
+		       <ul class="dropdown-menu" role="menu" arilabelledby="dLabel">
+			<li><a class="profileBtn" tabindex="-1" href="#">Profile</a></li>
+			<li><a class="logoutBtn" tabindex="-1" href="#">Logout</a></li>
+		       </ul>
+		    </li>
                     <% } else { %>
                     <li class="loginBtn"><a href="#"><i class="icon-facebook"></i> Login</a></li>
                     <% } %>
