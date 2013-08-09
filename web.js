@@ -6,6 +6,8 @@ var app = express.createServer(express.logger());
 
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
+app.use(express.cookieParser());
+app.use(express.session({secret: 'secret'}));
 app.use(app.router);
 app.use(express.static(__dirname + '/public'));
 

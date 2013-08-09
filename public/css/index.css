@@ -37,6 +37,14 @@ body{
           border-radius: 5px;
 }
 
+body .addthisSocialButtons{
+  position: fixed;
+  left: 0px;
+  top: 60px;
+  margin-left: -40px;
+}
+
+
 .sideBar{
 	height: 1000px;
 	position: fixed;
