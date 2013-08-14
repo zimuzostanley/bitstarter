@@ -40,8 +40,15 @@ body{
 body .addthisSocialButtons{
   position: fixed;
   left: 0px;
-  top: 60px;
+  top: 0px;
   margin-left: -40px;
+  margin-top: 50px;
+}
+
+body .bitcoinButton{
+  position: fixed;
+  left: 2px;
+  top: 43px; 
 }
 
 
