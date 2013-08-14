@@ -35,7 +35,7 @@ $(function(){
 				username = response.first_name;  
 				userObject = {'username': username, 'loggedIn': true};
 				$.ajax({
-					url: 'http://www.blurbcircle.com/login/username',
+					url: 'http://www.blurbcircle.com/login/' + username,
 					data: userObject,
 					success: function(data){
 						$('.container .nav-collapse').html(data);
