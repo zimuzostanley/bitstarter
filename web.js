@@ -12,7 +12,7 @@ app.use(app.router);
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', routes.index);
-app.get('/login', routes.login);
+app.get('/login/:username', routes.login);
 app.get('/logout', routes.logout);
 
 
