@@ -1,27 +1,22 @@
-var loggedInGlobal = '';
-var usernameGlobal = '';
+
 
 exports.index = function(req, res){
-	var loggedIn = loggedInGlobal;
-	var username = usernameGlobal;
+	var loggedIn = req.session.loggedIn;
+	var username = req.session.username;
 	console.log("index");
-        res.render('index', {layout: false, 'username': username, 'loggedIn': loggedIn});
+        res.render('index', {layout: false, 'username': req.session.username, 'loggedIn': req.session.loggedIn});
 };
 
 exports.login = function(req, res){
-	var loggedIn = true;
-	var username = req.param('username');
-	loggedInGlobal = loggedIn;
-	usernameGlobal = username;
+	req.session.loggedIn = true;
+	req.session.username = req.params.username;
 	console.log("login");
-    res.render('username', {layout: false, 'username': username, 'loggedIn': loggedIn});
+    res.render('username', {layout: false, 'username': req.session.username, 'loggedIn': req.session.loggedIn});
 };
 
 exports.logout = function(req, res){
-	var loggedIn = false;
-	var username = '';
-	loggedInGlobal = loggedIn;
-	usernameGlobal = username;
+    	req.session.loggedIn = false;
+	req.session.username = req.params.username;
 	console.log("logout");
     res.render('username', {layout: false, 'username': username, 'loggedIn': loggedIn});
 };
