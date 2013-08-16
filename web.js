@@ -1,5 +1,7 @@
 #!/usr/bin/env node
+var async = require('async');
 var express = require('express');
+var db = require('./models');
 var routes = require('./routes');
 var app = express.createServer(express.logger());
 
@@ -19,6 +21,17 @@ app.get('/logout', routes.logout);
 
 
 var port = process.env.PORT || 8000;
-app.listen(port, function() {
-  console.log("Listening on " + port);
+
+db.sequelize.sync().complete(function(err){
+    if(err){
+	throw err;
+    }
+
+    else {
+	app.listen(port, function() {
+	    console.log("Listening on " + port);
+	});
+
+	}
 });
+
