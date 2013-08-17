@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 var express = require('express');
+var async = require('async');
 var db = require('./models');
 var routes = require('./routes');
 var app = express.createServer(express.logger());
