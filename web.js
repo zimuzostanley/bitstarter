@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-var async = require('async');
+
 var express = require('express');
 var db = require('./models');
 var routes = require('./routes');
