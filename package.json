@@ -14,7 +14,8 @@
     "sequelize-postgres": "~1.7.0-alpha2",
     "node-gyp": "~0.10.9",
     "path": "~0.4.9",
-    "restler": "~2.0.1"
+    "restler": "~2.0.1",
+    "pg": "~2.3.1"
   },
   "engines": {
     "node": "0.10.12",
