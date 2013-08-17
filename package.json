@@ -12,7 +12,6 @@
     "sequelize": "~2.0.0-alpha3",
     "async": "~0.2.9",
     "sequelize-postgres": "~1.7.0-alpha2",
-    "node-gyp": "~0.10.9",
     "path": "~0.4.9",
     "restler": "~2.0.1",
     "pg": "~2.3.1"

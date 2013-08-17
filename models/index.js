@@ -1,5 +1,6 @@
 if (!global.hasOwnProperty('db')) {
-    var Sequelize = require('sequelize');
+    var Sequelize = require('sequelize-postgres').sequelize;
+    var postgres = require('sequelize-postgres').postgres;
     var sq = null;
     var fs = require('fs');
     var PGPASS_FILE = '../.pgpass';
